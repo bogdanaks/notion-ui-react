@@ -13,7 +13,7 @@ const Span = styled.span`
   padding: 3px 2px;
   line-height: 1.5;
   font-family: "SegoeUI", sans-serif;
-  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: auto; 
 
   font-weight: ${(props: SpanProps) => (props.bold ? "bold" : "500")};
   font-style: ${(props: SpanProps) => (props.italicize ? "italic" : "normal")};
