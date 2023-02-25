@@ -1,7 +1,7 @@
 name: Storybook
 on:
   push:
-    paths: ["stories/**", "src/**"]
+    paths: ["src/**"]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
