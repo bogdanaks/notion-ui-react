@@ -6,6 +6,7 @@ const List = styled.ul`
 `
 
 const Item = styled.li`
+  color: #37352f;
   display: flex;
   flex-direction: row;
   margin-top: 0.4em;

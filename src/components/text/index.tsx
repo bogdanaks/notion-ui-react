@@ -8,6 +8,7 @@ interface SpanProps {
 }
 
 const Span = styled.span`
+  color: #37352f;
   display: block;
   font-size: 16px;
   padding: 3px 2px;

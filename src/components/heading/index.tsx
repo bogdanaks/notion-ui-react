@@ -14,6 +14,7 @@ const HeadingWrap = styled.h1`
 `
 
 const Heading0 = styled(HeadingWrap)`
+  color: #37352f;
   font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
