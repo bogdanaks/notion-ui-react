@@ -1,8 +1,10 @@
 # Notion UI React [![npm][badge:license]]() [![Build Status][badge:github-actions]][link:github-actions]
 
-[Storybook][link:storybook]
-
 Notion UI React is a Notion style UI library. It contains a set of general purpose user interface components.
+
+## Demo
+
+#### [Storybook][link:storybook]
 
 ## Quick Start
 
