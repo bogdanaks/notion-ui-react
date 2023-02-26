@@ -17,14 +17,22 @@ const ALink = styled.a`
 
 interface LinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
-  href: string
+  href?: string
   style?: React.CSSProperties
   target?: React.HTMLAttributeAnchorTarget
+  as?: "a" | "span"
 }
 
-export const Link = ({ children, href, style, target, ...props }: LinkProps) => {
+export const Link = ({ children, href, style, target, as = "a", ...props }: LinkProps) => {
+  if (as === "a")
+    return (
+      <ALink href={href} style={style} target={target} {...props}>
+        {children}
+      </ALink>
+    )
+
   return (
-    <ALink href={href} style={style} target={target} {...props}>
+    <ALink as="span" style={style} {...props}>
       {children}
     </ALink>
   )
