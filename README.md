@@ -45,8 +45,8 @@ Use it in a react project:
 Made with :heart: by [Bogdan Aksenov][link:bogdan-aksenov-tg].
 I always happy to receive your feedback!
 
-[badge:license]: https://img.shields.io/npm/l/react-native-ui-kitten.svg
-[badge:github-actions]: https://github.com/akveo/react-native-ui-kitten/workflows/Build/badge.svg
-[link:github-actions]: https://github.com/akveo/react-native-ui-kitten/actions
+[badge:license]: https://img.shields.io/npm/l/notion-ui-react.svg
+[badge:github-actions]: https://github.com/akveo/notion-ui-react/workflows/Build/badge.svg
+[link:github-actions]: https://github.com/akveo/notion-ui-react/actions
 [link:storybook]: https://bogdanaks.github.io/notion-ui-react/
 [link:bogdan-aksenov-tg]: https://t.me/bogdanaks
