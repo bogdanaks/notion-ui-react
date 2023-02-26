@@ -18,7 +18,7 @@ Or, if you use yarn:
 yarn add notion-ui-react
 ```
 
-Use it in out react project:
+Use it in a react project:
 
 ```jsx
   import { Heading, Divider, Text } from "notion-ui-react"
