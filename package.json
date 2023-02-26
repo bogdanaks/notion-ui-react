@@ -1,12 +1,13 @@
 {
   "name": "notion-ui-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "scripts": {
     "build": "microbundle src/*.ts --css=inline --css-modules=true --sourcemap=false",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook NODE_OPTIONS=--openssl-legacy-provider",
-    "bu": "npm run build & yalc publish"
+    "bu": "npm run build & yalc publish",
+    "publish": "npm run build & npm publish"
   },
   "author": "Bogdan Aksenov",
   "license": "MIT",
