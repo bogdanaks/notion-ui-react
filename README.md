@@ -1,4 +1,4 @@
-# [<img src="https://cdn.worldvectorlogo.com/logos/notion-logo-1.svg" alt="Notion Logo" height="30px" />][link:notion-icon] Notion UI React [![npm][badge:license]]() [![Build Status][badge:github-actions]][link:github-actions]
+# Notion UI React [![npm][badge:license]]() [![Build Status][badge:github-actions]][link:github-actions]
 
 [Storybook][link:storybook]
 
@@ -17,6 +17,8 @@ Or, if you use yarn:
 ```bash
 yarn add notion-ui-react
 ```
+
+Use it in out react project:
 
 ```jsx
   import { Heading, Divider, Text } from "notion-ui-react"
@@ -46,6 +48,5 @@ I always happy to receive your feedback!
 [badge:license]: https://img.shields.io/npm/l/react-native-ui-kitten.svg
 [badge:github-actions]: https://github.com/akveo/react-native-ui-kitten/workflows/Build/badge.svg
 [link:github-actions]: https://github.com/akveo/react-native-ui-kitten/actions
-[link:notion-icon]: https://cdn.worldvectorlogo.com/logos/notion-logo-1.svg
 [link:storybook]: https://bogdanaks.github.io/notion-ui-react/
 [link:bogdan-aksenov-tg]: https://t.me/bogdanaks
