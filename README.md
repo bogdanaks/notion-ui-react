@@ -46,7 +46,7 @@ Made with :heart: by [Bogdan Aksenov][link:bogdan-aksenov-tg].
 I always happy to receive your feedback!
 
 [badge:license]: https://img.shields.io/npm/l/notion-ui-react.svg
-[badge:github-actions]: https://github.com/bogdanaks/notion-ui-react/workflows/Build/badge.svg
+[badge:github-actions]: https://github.com/bogdanaks/notion-ui-react/workflows/Storybook/badge.svg
 [link:github-actions]: https://github.com/bogdanaks/notion-ui-react/actions
 [link:storybook]: https://bogdanaks.github.io/notion-ui-react/
 [link:bogdan-aksenov-tg]: https://t.me/bogdanaks
