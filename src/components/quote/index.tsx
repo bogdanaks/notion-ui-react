@@ -1,5 +1,5 @@
 import React from "react"
-import { backgroundColors, textColors, Colors } from "../../shared/configs"
+import { backgroundColors, Colors, textColors } from "../../shared/configs"
 import styled from "styled-components"
 
 interface SpanProps {
@@ -11,11 +11,17 @@ interface SpanProps {
 }
 
 const Container = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
+  padding: 0 14px;
+  border-left: 3px solid currentColor;
 `
 
 const Span = styled.span`
+  color: #37352f;
+  display: block;
   font-size: 16px;
   padding: 3px 2px;
   line-height: 1.5;
@@ -30,7 +36,7 @@ const Span = styled.span`
   background: ${(props: SpanProps) => backgroundColors[props.bgColor]};
 `
 
-interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
+interface QuoteProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode
   bold?: boolean
   italicize?: boolean
@@ -40,7 +46,7 @@ interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
   bgColor?: Colors
 }
 
-export const Text = ({
+export const Quote = ({
   children,
   bold = false,
   italicize = false,
@@ -49,7 +55,7 @@ export const Text = ({
   textColor = "default",
   bgColor = "default",
   ...props
-}: TextProps) => {
+}: QuoteProps) => {
   return (
     <Container>
       <Span

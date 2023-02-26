@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 
 const ALink = styled.a`
+  color: #37352f;
   font-size: inherit;
   font-family: "SegoeUI", sans-serif;
   -webkit-font-smoothing: auto;
 
   cursor: pointer;
-  color: inherit;
   word-wrap: break-word;
   text-decoration: inherit;
   border-bottom: 0.05em solid;

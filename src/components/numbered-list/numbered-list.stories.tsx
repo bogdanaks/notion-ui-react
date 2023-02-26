@@ -1,15 +1,15 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
-import { BulletedList } from "./index"
-import { Text } from "../../components/text"
+import { NumberedList } from "./index"
+import { Text } from "../text"
 
 export default {
-  title: "Components/BulletedList",
-  component: BulletedList,
-} as ComponentMeta<typeof BulletedList>
+  title: "Components/NumberedList",
+  component: NumberedList,
+} as ComponentMeta<typeof NumberedList>
 
-const Template: ComponentStory<typeof BulletedList> = (args) => <BulletedList {...args} />
+const Template: ComponentStory<typeof NumberedList> = (args) => <NumberedList {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

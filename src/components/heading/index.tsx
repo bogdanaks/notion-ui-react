@@ -1,8 +1,17 @@
 import React from "react"
+import { backgroundColors, Colors, textColors } from "../../shared/configs"
 import styled from "styled-components"
 
+interface HeadingWrapProps {
+  bold: boolean
+  italicize: boolean
+  underline: boolean
+  textColor: Colors
+  bgColor: Colors
+}
+
 const HeadingWrap = styled.h1`
-  display: block;
+  display: inline;
   font-weight: 600;
   line-height: 1.3;
   white-space: pre-wrap;
@@ -11,9 +20,13 @@ const HeadingWrap = styled.h1`
   font-family: "Segoe UI", sans-serif;
   -webkit-font-smoothing: auto;
   margin: 0;
+
+  color: ${(props: HeadingWrapProps) => textColors[props.textColor]};
+  background: ${(props: HeadingWrapProps) => backgroundColors[props.bgColor]};
 `
 
 const Heading0 = styled(HeadingWrap)`
+  color: #37352f;
   font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
@@ -31,31 +44,111 @@ const Heading3 = styled(HeadingWrap)`
   font-size: 1.25em;
 `
 
+const HeadingContainer = styled.div`
+  display: block;
+  width: 100%;
+`
+
 interface HeadingProps extends React.HTMLAttributes<HTMLHeadElement> {
-  level?: 1 | 2 | 3 | 0
   children: React.ReactNode
+  level?: 1 | 2 | 3 | 0
+  bold?: boolean
+  italicize?: boolean
+  underline?: boolean
+  textColor?: Colors
+  bgColor?: Colors
 }
 
-export const Heading = ({ level = 1, children, ...props }: HeadingProps) => {
+const HeadingWrapper = ({ children }: { children: JSX.Element }) => <HeadingContainer>{children}</HeadingContainer>
+
+export const Heading = ({
+  level = 1,
+  children,
+  bold = false,
+  italicize = false,
+  underline = false,
+  textColor = "default",
+  bgColor = "default",
+  ...props
+}: HeadingProps) => {
   switch (level) {
     case 0:
-      return <Heading0 {...props}>{children}</Heading0>
+      return (
+        <HeadingWrapper>
+          <Heading0
+            bold={bold}
+            italicize={italicize}
+            underline={underline}
+            textColor={textColor}
+            bgColor={bgColor}
+            {...props}
+          >
+            {children}
+          </Heading0>
+        </HeadingWrapper>
+      )
     case 1:
-      return <Heading1 {...props}>{children}</Heading1>
+      return (
+        <HeadingWrapper>
+          <Heading1
+            bold={bold}
+            italicize={italicize}
+            underline={underline}
+            textColor={textColor}
+            bgColor={bgColor}
+            {...props}
+          >
+            {children}
+          </Heading1>
+        </HeadingWrapper>
+      )
     case 2:
       return (
-        <Heading2 as="h2" {...props}>
-          {children}
-        </Heading2>
+        <HeadingWrapper>
+          <Heading2
+            bold={bold}
+            italicize={italicize}
+            underline={underline}
+            textColor={textColor}
+            bgColor={bgColor}
+            as="h2"
+            {...props}
+          >
+            {children}
+          </Heading2>
+        </HeadingWrapper>
       )
     case 3:
       return (
-        <Heading3 as="h3" {...props}>
-          {children}
-        </Heading3>
+        <HeadingWrapper>
+          <Heading3
+            bold={bold}
+            italicize={italicize}
+            underline={underline}
+            textColor={textColor}
+            bgColor={bgColor}
+            as="h3"
+            {...props}
+          >
+            {children}
+          </Heading3>
+        </HeadingWrapper>
       )
 
     default:
-      return <Heading1 {...props}>{children}</Heading1>
+      return (
+        <HeadingWrapper>
+          <Heading1
+            bold={bold}
+            italicize={italicize}
+            underline={underline}
+            textColor={textColor}
+            bgColor={bgColor}
+            {...props}
+          >
+            {children}
+          </Heading1>
+        </HeadingWrapper>
+      )
   }
 }
