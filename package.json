@@ -6,7 +6,7 @@
     "build": "microbundle src/*.ts --css=inline --css-modules=true --sourcemap=false",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook NODE_OPTIONS=--openssl-legacy-provider",
-    "bu": "npm run build:mb & yalc publish"
+    "bu": "npm run build & yalc publish"
   },
   "author": "Bogdan Aksenov",
   "license": "MIT",
