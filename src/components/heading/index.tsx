@@ -10,6 +10,7 @@ const HeadingWrap = styled.h1`
   padding: 3px 2px;
   font-family: "Segoe UI", sans-serif;
   -webkit-font-smoothing: auto;
+  margin: 0;
 `
 
 const Heading0 = styled(HeadingWrap)`
