@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import styles from "./styles.module.css"
-
 const List = styled.ul`
   list-style: none;
 `
