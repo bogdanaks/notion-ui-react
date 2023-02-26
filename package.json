@@ -9,7 +9,7 @@
     "bu": "npm run build:mb & yalc publish"
   },
   "author": "Bogdan Aksenov",
-  "license": "ISC",
+  "license": "MIT",
   "sideEffects": [
     "build/*",
     "*.css"
