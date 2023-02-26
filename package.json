@@ -1,6 +1,6 @@
 {
   "name": "notion-ui-react",
-  "version": "0.2.15",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "build": "microbundle src/*.ts --css=inline --css-modules=true --sourcemap=false",
