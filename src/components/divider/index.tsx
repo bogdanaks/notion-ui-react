@@ -16,10 +16,15 @@ const Line = styled.div`
   border-bottom: 1px solid rgba(55, 53, 47, 0.16);
 `
 
-export const Divider = () => {
+interface DividerProps {
+  wrapperProps?: React.HTMLAttributes<HTMLDivElement>
+  lineProps?: React.HTMLAttributes<HTMLDivElement>
+}
+
+export const Divider = ({ wrapperProps, lineProps }: DividerProps) => {
   return (
-    <Wrapper>
-      <Line />
+    <Wrapper {...wrapperProps}>
+      <Line {...lineProps} />
     </Wrapper>
   )
 }

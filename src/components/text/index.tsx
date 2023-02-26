@@ -20,7 +20,7 @@ const Span = styled.span`
   border-bottom: ${(props: SpanProps) => (props.underline ? "0.05em solid" : "0")};
 `
 
-interface TextProps {
+interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode
   bold?: boolean
   italicize?: boolean
@@ -28,9 +28,9 @@ interface TextProps {
   style?: React.CSSProperties
 }
 
-export const Text = ({ children, bold = false, italicize = false, underline = false, style }: TextProps) => {
+export const Text = ({ children, bold = false, italicize = false, underline = false, style, ...props }: TextProps) => {
   return (
-    <Span bold={bold} italicize={italicize} underline={underline} style={style}>
+    <Span bold={bold} italicize={italicize} underline={underline} style={style} {...props}>
       {children}
     </Span>
   )

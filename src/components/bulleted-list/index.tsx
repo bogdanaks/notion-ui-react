@@ -30,13 +30,13 @@ const Bullet = styled.div`
   }
 `
 
-interface BulletedListProps {
+interface BulletedListProps extends React.HTMLAttributes<HTMLUListElement> {
   children?: React.ReactNode[]
 }
 
-export const BulletedList = ({ children }: BulletedListProps) => {
+export const BulletedList = ({ children, ...props }: BulletedListProps) => {
   return (
-    <List>
+    <List {...props}>
       {children?.map((item, index) => (
         <Item key={index}>
           <Bullet />
