@@ -20,17 +20,27 @@ Or, if you use yarn:
 yarn add notion-ui-react
 ```
 
-Use it in a react project:
+Use it in a React project:
 
 ```jsx
-  import { Heading, Divider, Text } from "notion-ui-react"
+import { Heading, Divider, Text } from "notion-ui-react"
 
-  <Heading level={3}>Heading 3 level</Heading>
-  <Text italicize bold underline>Some text</Text>
-  <Divider />
-  <Text italicize style={{ fontSize: 12, padding: 0 }}>
-    Text with custom styles
-  </Text>
+const MyComponent = () => {
+  return (
+    <div>
+      <Heading level={3}>Heading 3 level</Heading>
+      <Text italicize bold underline>
+        Some text
+      </Text>
+      <Divider />
+      <Text italicize style={{ fontSize: 12, padding: 0 }}>
+        Text with custom styles
+      </Text>
+    </div>
+  )
+}
+
+export default MyComponent
 ```
 
 ## How can I support the developers?
