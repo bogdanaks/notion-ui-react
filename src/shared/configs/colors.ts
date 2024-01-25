@@ -1,9 +1,10 @@
-export type Colors = "default" | "gray" | "brown" | "orange" | "yellow" | "green" | "blue" | "purple" | "pink" | "red"
+export type Colors = "default" | "white" | "gray" | "brown" | "orange" | "yellow" | "green" | "blue" | "purple" | "pink" | "red"
 
 type ColorsMap<T> = { [day in Colors]: T }
 
 export const textColors: ColorsMap<string> = {
   default: "#37352f",
+  white: "#FFFFFF",
   gray: "rgba(120, 119, 116, 1);",
   brown: "rgba(159, 107, 83, 1);",
   orange: "rgba(217, 115, 13, 1);",
@@ -17,6 +18,7 @@ export const textColors: ColorsMap<string> = {
 
 export const backgroundColors: ColorsMap<string> = {
   default: "transparent",
+  white: "rgba(255, 255, 255, 1);",
   gray: "rgba(241, 241, 239, 1);",
   brown: "rgba(244, 238, 238, 1);",
   orange: "rgba(251, 236, 221, 1);",
